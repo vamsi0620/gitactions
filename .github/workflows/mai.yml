@@ -1,11 +1,17 @@
-name: test
+name: My Custom GitHub Action
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   test:
-  name: test code base
-  runs-on: windows latest
+    runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
       - name: atla.vamsi@straive.com
         run: echo "Hello, world!"
