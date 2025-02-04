@@ -1,5 +1,11 @@
+name: test
+
+on: push
+
 jobs:
   test:
+  name: test code base
+  runs-on: windows latest
     steps:
       - name: atla.vamsi@straive.com
         run: echo "Hello, world!"
