@@ -1,0 +1,5 @@
+jobs:
+  test:
+    steps:
+      - name: atla.vamsi@straive.com
+        run: echo "Hello, world!"
